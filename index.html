@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>AI Smart Text Analyzer</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="container">
+    <h1>🤖 AI Text Summarizer & Sentiment Analyzer</h1>
+    <p>Paste your long text below to get an AI-generated summary and sentiment analysis.</p>
+
+    <textarea id="userInput" placeholder="Enter or paste your text here..."></textarea>
+    
+    <button id="analyzeBtn" onclick="analyzeText()">Analyze with AI</button>
+
+    <div id="loader" class="hidden">Thinking... 🧠</div>
+
+    <div id="resultBox" class="result-container hidden">
+      <h3>Analysis Result:</h3>
+      <div id="resultOutput"></div>
+    </div>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>
